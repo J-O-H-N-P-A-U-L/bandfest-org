@@ -60,6 +60,79 @@ const IndexPage = () => (
               </div>
               </div>
               </div>
+              <div className="bs-component">
+                <div className="jumbotron">
+                  <h1 className="display-3">
+                    <img src={upspot} alt="7upspot.gif" />&nbsp; 
+                      <text style={{color: '#FF0000'}}>B</text>
+                      <text style={{color: '#FF5A00'}}>a</text>
+                      <text style={{color: '#FFB400'}}>n</text>
+                      <text style={{color: '#FFff00'}}>d</text>
+                      <text style={{color: '#A5ff00'}}>f</text>
+                      <text style={{color: '#4Bff00'}}>e</text>
+                      <text style={{color: '#00ff00'}}>s</text>
+                      <text style={{color: '#00ff5A0'}}>t</text>
+                      <blink>
+                      <text style={{color: '#00ffB4'}}>.</text>
+                      <text style={{color: '#00ffff'}}>o</text>
+                      <text style={{color: '#00B4ff'}}>r</text>
+                      <text style={{color: '#005Aff'}}>g</text>
+                    </blink>
+                    </h1>
+                    <p class="lead">A theme for Gatsby, from Twitter Bootstrap.</p>
+              <center>
+                <table cellpadding="2" cellspacing="2">
+                  <tr>
+                    <td>
+                      <img src={ie_logo} alt="ie_logo.gif" />
+                    </td>
+                    <td>
+                    <img src={ns_logo} alt="ns_logo.gif" />
+                    </td>
+                    <td>
+                    <img src={noframes} alt="noframes.gif" />
+                    </td>
+                    <td>
+                    <img src={notepad} alt="notepad.gif" />
+                    </td>
+                  </tr>
+                </table></center>
+                  <hr className="my-4" />
+                  <p>
+                    <center>
+            <img src={yahooweek} alt="yahooweek.gif" />
+            <img src={community} alt="community.gif" />
+            <img src={wabwalk} alt="wabwalk.gif" />
+            <img src={webtrips} alt="webtrips.gif" />
+            </center></p>
+                  <p className="lead">
+                    <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                  </p>
+                  <div class="span4">
+            <h3>Example addresses</h3>
+            <address>
+            <img src={spinningearth} alt="spinningearth.gif" />&nbsp; <strong>Twitter, Inc.</strong>
+              <br /> 795 Folsom Ave, Suite 600 <br /> San Francisco, CA 94107 <br />
+              <abbr title="Phone">P:</abbr> (123) 456-7890
+            </address>
+            <address>
+              <strong>Full Name</strong>
+              <br />
+              <a href="mailto:#" />
+              <img src={emailme} alt="emailme.gif" />
+            </address>
+          </div>
+                </div>
+                <br />
+      <br />
+      <center>
+        {/* <!-- TRIPLE MC HAMMER -->  */}
+        <img src={mchammer} alt="mchammer.gif" />&nbsp;&nbsp; 
+        <img src={mchammer} alt="mchammer.gif" />&nbsp;&nbsp; 
+        <img src={mchammer} alt="mchammer.gif" />
+      </center>
+              </div>
+
      <div class="navbar ">
       <div class="navbar-inner">
         <div class="container">
@@ -116,6 +189,8 @@ const IndexPage = () => (
               <div className="col-sm-12">
                 <h2 id="buttons">Buttons</h2>
               </div>
+              <a href="#buttons">
+              <img src={hot} alt="hot.gif" /> Buttons </a>
             </div>
           </div>
           <div className="row">
@@ -340,6 +415,53 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
+        <br />
+      <br />
+      <br />
+      <center>
+        {/* <!-- TRIPLE MC HAMMER -->  */}
+        <img src={mchammer} alt="mchammer.gif" />&nbsp;&nbsp; 
+        <img src={mchammer} alt="mchammer.gif" />&nbsp;&nbsp; 
+        <img src={mchammer} alt="mchammer.gif" />
+      </center>
+
+
+      <h3 id="alerts">Alerts</h3>
+        <div class="row">
+          <div class="span12">
+            <div class="alert alert-block">
+              <a class="close">&times;</a>
+              <img src={drudgesiren} alt="drudgesiren.gif" />
+              <h4 class="alert-heading">Alert block</h4>
+              <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <div class="alert alert-error">
+              <a class="close">&times;</a>
+              <strong>Error</strong> Change a few things up and try submitting again.
+            </div>
+          </div>
+          <div class="span4">
+            <div class="alert alert-success">
+              <a class="close">&times;</a>
+              <strong>Success</strong> You successfully read this important alert message.
+            </div>
+          </div>
+          <div class="span4">
+            <div class="alert alert-info">
+              <a class="close">&times;</a>
+              <strong>Information</strong> This alert needs your attention, but it's not super important.
+            </div>
+          </div>
+        </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      
         {/* Typography
         ================================================== */}
         <div className="bs-docs-section">
@@ -420,6 +542,73 @@ const IndexPage = () => (
                   <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                   <footer className="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
                 </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+                {/* Dialogs
+        ================================================== */}
+        <div className="bs-docs-section">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="page-header">
+                <h2 id="dialogs">Dialogs</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm-6">
+              <h2>Modals</h2>
+              <div className="bs-component">
+                <div className="modal">
+                  <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                      <div className="modal-header">
+                        <h5 className="modal-title">Modal title</h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div className="modal-body">
+                        <p>Modal body text goes here.</p>
+                      </div>
+                      <div className="modal-footer">
+                        <button type="button" className="btn btn-primary">Save changes</button>
+                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-6">
+              <h2>Popovers</h2>
+              <div className="bs-component" style={{marginBottom: '3em'}}>
+                <button type="button" className="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Left</button>
+                <button type="button" className="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Top</button>
+                <button type="button" className="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+                sagittis lacus vel augue laoreet rutrum faucibus.">Bottom</button>
+                <button type="button" className="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Right</button>
+              </div>
+              <h2>Tooltips</h2>
+              <div className="bs-component">
+                <button type="button" className="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Left</button>
+                <button type="button" className="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Top</button>
+                <button type="button" className="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Bottom</button>
+                <button type="button" className="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Right</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="source-modal" className="modal fade">
+          <div className="modal-dialog modal-lg">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h4 className="modal-title">Source Code</h4>
+                <button type="button" className="close" data-dismiss="modal" aria-hidden="true">×</button>
+              </div>
+              <div className="modal-body">
+                <pre contentEditable />
               </div>
             </div>
           </div>
@@ -1373,74 +1562,25 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-        {/* Dialogs
-        ================================================== */}
-        <div className="bs-docs-section">
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="page-header">
-                <h2 id="dialogs">Dialogs</h2>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-sm-6">
-              <h2>Modals</h2>
-              <div className="bs-component">
-                <div className="modal">
-                  <div className="modal-dialog" role="document">
-                    <div className="modal-content">
-                      <div className="modal-header">
-                        <h5 className="modal-title">Modal title</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">×</span>
-                        </button>
-                      </div>
-                      <div className="modal-body">
-                        <p>Modal body text goes here.</p>
-                      </div>
-                      <div className="modal-footer">
-                        <button type="button" className="btn btn-primary">Save changes</button>
-                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <h2>Popovers</h2>
-              <div className="bs-component" style={{marginBottom: '3em'}}>
-                <button type="button" className="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Left</button>
-                <button type="button" className="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Top</button>
-                <button type="button" className="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-                sagittis lacus vel augue laoreet rutrum faucibus.">Bottom</button>
-                <button type="button" className="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Right</button>
-              </div>
-              <h2>Tooltips</h2>
-              <div className="bs-component">
-                <button type="button" className="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Left</button>
-                <button type="button" className="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Top</button>
-                <button type="button" className="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Bottom</button>
-                <button type="button" className="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Right</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="source-modal" className="modal fade">
-          <div className="modal-dialog modal-lg">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h4 className="modal-title">Source Code</h4>
-                <button type="button" className="close" data-dismiss="modal" aria-hidden="true">×</button>
-              </div>
-              <div className="modal-body">
-                <pre contentEditable />
-              </div>
-            </div>
-          </div>
-        </div>
+                  {/*                <!-- Footer
+        ================================================== --> */}
+      
+
+      <footer class="footer">
+        <p class="pull-left" style={{marginTop: '-14px'}}>
+        <img src={geocities} alt="geocities.jpg" />
+        </p>
+        <p class="pull-right" style={{marginTop: '-14px'}}>
+        <img src={hacker} alt="hacker.gif" />&nbsp; Built with <a href="http://bootswatch.com">Bootswatch</a>
+        </p>
+      </footer>
+      <center>
+      <img src={counter2} alt="counter2.gif" />
+      </center>
+
+        
       </div>
+      
       </section>
   </Layout>
 )
