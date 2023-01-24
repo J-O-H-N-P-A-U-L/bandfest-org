@@ -17,7 +17,7 @@ const AboutPage = () => (
             <li>If any issue report to <a href="https://github.com/r-ichard/gatsby-starter-bootstrap-5" target="_blank" rel="noopener noreferrer">Github Repo</a></li>
           </ul>
         </p>
-        <p>Created by <a href="https://github.com/r-ichard" target="_blank" rel="noopener noreferrer">Richard Raduly</a></p>
+        <p>Created by <a href="https://github.com/J-O-H-N-P-A-U-L" target="_blank" rel="noopener noreferrer">JOHN PAUL</a></p>
       </div>
       <Link to="/">Go back to the homepage</Link>
     </div>

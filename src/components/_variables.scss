@@ -1,0 +1,256 @@
+$blue: #00f;
+$black: #000;
+$white: #fff;
+$red: #f00;
+$teal: #008080;
+$orange: #ffa500;
+
+$body-bg: $blue;
+body {
+    -webkit-font-smoothing: none;
+    background: #0000ff url('../images/microfab.gif') top left;
+  }
+  .navbar {
+    border-bottom: 1px solid #fff;
+    -webkit-box-shadow: 0 2px 0 #D4D0C8, 0 3px 0 #808080, 0 4px 0 #404040;
+       -moz-box-shadow: 0 2px 0 #D4D0C8, 0 3px 0 #808080, 0 4px 0 #404040;
+            box-shadow: 0 2px 0 #D4D0C8, 0 3px 0 #808080, 0 4px 0 #404040;
+  }
+  
+  .navbar-inner {
+    background: #000000 url('../images/stars.gif') top left;
+    border-bottom: 1px solid #D4D0C8;
+  }
+
+  .btn {
+    border: 6px ridge #bbbbbb;
+  }
+  
+  .btn-primary {
+    background: #000000 url('../images/rainbow.gif') top left;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: yellow;
+  }
+  
+  .control-group.error input {
+    background: #000000 url('../images/flames.gif') 0 -30px repeat-x;
+  }
+
+
+.dropdown-menu {
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+  }
+  
+  .label-important,
+  .badge-important {
+    background-color: red;
+  }
+  
+  .label-important[href],
+  .badge-important[href] {
+    background-color: red;
+  }
+  
+  .label-warning,
+  .badge-warning {
+    color: black;
+    background-color: yellow;
+  }
+  
+  .label-warning[href],
+  .badge-warning[href] {
+    color: black;
+    background-color: yellow;
+  }
+  
+  .label-success,
+  .badge-success {
+    background-color: green;
+  }
+  
+  .label-success[href],
+  .badge-success[href] {
+    background-color: green;
+  }
+  
+  .label-info,
+  .badge-info {
+    background-color: #00ffff;
+  }
+  
+  .label-info[href],
+  .badge-info[href] {
+    background-color: #00ffff;
+  }
+  
+  .label-inverse,
+  .badge-inverse {
+    background-color: black;
+  }
+  
+  .label-inverse[href],
+  .badge-inverse[href] {
+    background-color: black;
+  }
+  
+  .hero-unit,
+  .well {
+    background: #000000 url('../images/stars.gif') top left;
+  }
+  
+  .breadcrumb {
+    color: white;
+    background: black;
+  }
+  
+  .nav-tabs > li > a:hover,
+  .nav-tabs > li > a:focus {
+    background: black;
+    border-color: black;
+  }
+  
+  .progress .bar {
+    background: #c0c0c0 url('../images/progress.gif') top left repeat-x !important;
+    border: 1px solid #fff;
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+  }
+  
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    41% {
+      opacity: 1;
+    }
+    99% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    41% {
+      opacity: 1;
+    }
+    99% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-ms-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    41% {
+      opacity: 1;
+    }
+    99% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-o-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    41% {
+      opacity: 1;
+    }
+    99% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    41% {
+      opacity: 1;
+    }
+    99% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .pull-right {
+    float: right;
+  }
+  
+  .pull-left {
+    float: left;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  .affix {
+    position: fixed;
+  }
+  
+  
+$yellow: rgb(255, 255, 0);
+$text-muted: $yellow;
+$blockquote-small-color: $yellow;
+$body-color: $yellow;
+$font-family-base: Comic Sans,Comic Sans MS,Chalkboard,ChalkboardSE-Regular,Marker Felt,Purisa,URW Chancery L,cursive,sans-serif;;
+$jumbotron-bg: $black;
+$card-bg: $black;
+$card-border-color: rgba($white, .125);
+$headings-color: $red;
+$list-group-border-color: rgba($white, .125);
+$modal-content-bg: $black;
+$modal-content-border-color: rgba($white, .2);
+$modal-content-box-shadow-xs: 0 .25rem .5rem rgba($white, .5);
+$modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba($white, .5);
+$card-cap-bg: rgba($white, .03);
+$primary: $teal;
+$danger: $orange;
+$list-group-bg: $black;
