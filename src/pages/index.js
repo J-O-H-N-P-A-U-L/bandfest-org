@@ -49,7 +49,7 @@ const IndexPage = () => (
                     </blink>
                     </h1>
                     <img src={wyld_stallyns} alt="wyld_stallyns.gif" />
-          <p className="lead text-muted"> Welcome to this Boostrap 5 Gatsby Starter</p>
+          <p className="lead text-muted"> ...and we're Wyld Stallyns!</p>
           </div>
                           <center>
             <img src={yahooweek} alt="yahooweek.gif" />
