@@ -19,6 +19,7 @@ import construction from "../images/gif/construction.gif"
 import new2 from "../images/gif/new2.gif"
 import geocities from "../images/gif/geocities.jpg"
 import hacker from "../images/gif/hacker.gif"
+import wyld_stallyns from "../images/wyld_stallyns.gif"
 import counter2 from "../images/gif/counter2.gif"
 import drudgesiren from "../images/gif/drudgesiren.gif"
 
@@ -32,7 +33,6 @@ const IndexPage = () => (
         <div className="col-lg-6 col-md-8 mx-auto">
         <div className="well">
                 <h1 className="display-3">
-                    <img src={upspot} alt="7upspot.gif" />&nbsp; 
                       <text style={{color: '#FF0000'}}>B</text>
                       <text style={{color: '#FF5A00'}}>a</text>
                       <text style={{color: '#FFB400'}}>n</text>
@@ -48,6 +48,7 @@ const IndexPage = () => (
                       <text style={{color: '#005Aff'}}>g</text>
                     </blink>
                     </h1>
+                    <img src={wyld_stallyns} alt="wyld_stallyns.gif" />
           <p className="lead text-muted"> Welcome to this Boostrap 5 Gatsby Starter</p>
           </div>
                           <center>

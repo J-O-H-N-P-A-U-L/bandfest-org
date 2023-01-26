@@ -14,7 +14,20 @@ const Navbar = ({ siteTitle }) => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-primary">
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand" href="#">{siteTitle}</Link>
+        <Link to="/" className="navbar-brand" href="#">        <text style={{color: '#FF0000'}}>B</text>
+                      <text style={{color: '#FF5A00'}}>a</text>
+                      <text style={{color: '#FFB400'}}>n</text>
+                      <text style={{color: '#FFff00'}}>d</text>
+                      <text style={{color: '#A5ff00'}}>f</text>
+                      <text style={{color: '#4Bff00'}}>e</text>
+                      <text style={{color: '#00ff00'}}>s</text>
+                      <text style={{color: '#00ff5A0'}}>t</text>
+                      <blink>
+                      <text style={{color: '#00ffB4'}}>.</text>
+                      <text style={{color: '#00ffff'}}>o</text>
+                      <text style={{color: '#00B4ff'}}>r</text>
+                      <text style={{color: '#005Aff'}}>g</text>
+                    </blink></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar"
                 aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
