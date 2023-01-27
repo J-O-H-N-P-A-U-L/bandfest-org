@@ -48,7 +48,7 @@ const IndexPage = () => (
                       <text style={{color: '#005Aff'}}>g</text>
                     </blink>
                     </h1>
-                    <img src={wyld_stallyns} alt="wyld_stallyns.gif" />
+                    <img src={wyld_stallyns} className="img-fluid" alt="wyld_stallyns.gif" />
           <p className="lead text-muted"> ...and we're Wyld Stallyns!</p>
           </div>
                           <center>
