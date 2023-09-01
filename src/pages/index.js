@@ -40,24 +40,55 @@ const getRandomImage = () => {
   return imageList[randomIndex];
 };
 
+// ... (Previous code)
+
 const MusicSharingPlatform = () => (
   <Layout>
     <Seo title="Music Sharing Platform - Bandfest.org" />
 
     {/* Header */}
-    <header className="bg-primary text-white py-5">
+    <header
+      className="bg-primary text-white py-5"
+      style={{
+        backgroundImage: `url(${getRandomImage()})`,
+        backgroundRepeat: 'repeat',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        fontFamily: 'Comic Sans MS, cursive',
+        textAlign: 'center',
+        fontSize: '36px',
+      }}
+    >
       <div className="container">
-        <h1>Discover New Music</h1>
+        <h1>Welcome to Bandfest.org</h1>
         <p>Upcoming Music Groups Share Sound Snippets Here!</p>
-        <Link to="/about" className="btn btn-light btn-lg">
+        <Link
+          to="/about"
+          className="btn btn-light btn-lg"
+          style={{
+            backgroundColor: '#FF6600',
+            padding: '10px 20px',
+            borderRadius: '8px',
+            fontSize: '24px',
+            textDecoration: 'none',
+            color: 'white',
+          }}
+        >
           About Us
         </Link>
-        <img src={getRandomImage()} alt="Random Image" />
       </div>
     </header>
 
     {/* Featured Sound Snippet */}
-    <section className="py-5">
+    <section
+      className="py-5"
+      style={{
+        backgroundColor: 'black',
+        color: 'white',
+        fontFamily: 'Arial, sans-serif',
+        padding: '20px',
+      }}
+    >
       <div className="container">
         <h2>Featured Sound Snippet</h2>
         {/* Replace the iframe with the SoundCloud embed code */}
@@ -78,14 +109,35 @@ const MusicSharingPlatform = () => (
     </section>
 
     {/* Explore Music */}
-    <section className="bg-light py-5">
+    <section
+      className="bg-light py-5"
+      style={{
+        backgroundImage: `url(${getRandomImage()})`,
+        backgroundRepeat: 'repeat',
+        backgroundPosition: 'center',
+        fontFamily: 'Comic Sans MS, cursive',
+        fontSize: '24px',
+        padding: '20px',
+      }}
+    >
       <div className="container">
         <h2>Explore New Music</h2>
         <p>
           Browse through a diverse collection of sound snippets and discover
           emerging talent.
         </p>
-        <Link to="/explore" className="btn btn-primary btn-lg">
+        <Link
+          to="/explore"
+          className="btn btn-primary btn-lg"
+          style={{
+            backgroundColor: '#FF6600',
+            padding: '10px 20px',
+            borderRadius: '8px',
+            fontSize: '24px',
+            textDecoration: 'none',
+            color: 'white',
+          }}
+        >
           Explore Music
         </Link>
         <img src={getRandomImage()} alt="Random Image" />
@@ -93,14 +145,33 @@ const MusicSharingPlatform = () => (
     </section>
 
     {/* Share Your Music */}
-    <section className="py-5">
+    <section
+      className="py-5"
+      style={{
+        backgroundColor: '#FFFFCC',
+        color: 'black',
+        fontFamily: 'Arial, sans-serif',
+        padding: '20px',
+      }}
+    >
       <div className="container">
         <h2>Share Your Music</h2>
         <p>
           Are you an upcoming music group? Share your sound snippets with the
           world!
         </p>
-        <Link to="/upload" className="btn btn-success btn-lg">
+        <Link
+          to="/upload"
+          className="btn btn-success btn-lg"
+          style={{
+            backgroundColor: '#FF6600',
+            padding: '10px 20px',
+            borderRadius: '8px',
+            fontSize: '24px',
+            textDecoration: 'none',
+            color: 'white',
+          }}
+        >
           Upload Music
         </Link>
         <img src={getRandomImage()} alt="Random Image" />
@@ -108,13 +179,32 @@ const MusicSharingPlatform = () => (
     </section>
 
     {/* Contact Section */}
-    <section className="bg-dark py-5 text-white">
+    <section
+      className="bg-dark py-5 text-white"
+      style={{
+        backgroundColor: 'black',
+        fontFamily: 'Comic Sans MS, cursive',
+        fontSize: '24px',
+        padding: '20px',
+      }}
+    >
       <div className="container">
         <h2>Contact Us</h2>
         <p>
           Have questions or need assistance? Feel free to reach out to us.
         </p>
-        <Link to="/contact" className="btn btn-warning btn-lg">
+        <Link
+          to="/contact"
+          className="btn btn-warning btn-lg"
+          style={{
+            backgroundColor: '#FF6600',
+            padding: '10px 20px',
+            borderRadius: '8px',
+            fontSize: '24px',
+            textDecoration: 'none',
+            color: 'white',
+          }}
+        >
           Contact Us
         </Link>
         <img src={getRandomImage()} alt="Random Image" />
@@ -122,12 +212,23 @@ const MusicSharingPlatform = () => (
     </section>
 
     {/* Footer */}
-    <footer className="bg-secondary text-white py-3">
+    <footer
+      className="bg-secondary text-white py-3"
+      style={{
+        backgroundColor: 'black',
+        fontFamily: 'Arial, sans-serif',
+        fontSize: '18px',
+        padding: '20px',
+        textAlign: 'center',
+      }}
+    >
       <div className="container">
         <p>&copy; {new Date().getFullYear()} Bandfest.org. All rights reserved.</p>
+        <img src={getRandomImage()} alt="Random Image" />
       </div>
     </footer>
   </Layout>
 );
 
 export default MusicSharingPlatform;
+
