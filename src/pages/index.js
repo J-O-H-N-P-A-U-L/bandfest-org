@@ -1,123 +1,133 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import upspot from "../images/gif/7upspot.gif"
-import ie_logo from "../images/gif/ie_logo.gif"
-import ns_logo from "../images/gif/ns_logo.gif"
-import noframes from "../images/gif/noframes.gif"
-import notepad from "../images/gif/notepad.gif"
-import yahooweek from "../images/gif/yahooweek.gif"
-import community from "../images/gif/community.gif"
-import wabwalk from "../images/gif/wabwalk.gif"
-import webtrips from "../images/gif/webtrips.gif"
-import hot from "../images/gif/hot.gif"
-import newgif from "../images/gif/new.gif"
-import mchammer from "../images/gif/mchammer.gif"
-import spinningearth from "../images/gif/spinningearth.gif"
-import emailme from "../images/gif/emailme.gif"
-import construction from "../images/gif/construction.gif"
-import new2 from "../images/gif/new2.gif"
-import geocities from "../images/gif/geocities.jpg"
-import hacker from "../images/gif/hacker.gif"
-import wyld_stallyns from "../images/wyld_stallyns.gif"
-import counter2 from "../images/gif/counter2.gif"
-import drudgesiren from "../images/gif/drudgesiren.gif"
+import * as React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
-import Layout from "../components/layout"
-import { Seo } from "../components/seo"
+import Layout from "../components/layout";
+import { Seo } from "../components/seo";
 
-const IndexPage = () => (
+// Import images
+import upspot from "../images/gif/7upspot.gif";
+import ie_logo from "../images/gif/ie_logo.gif";
+import ns_logo from "../images/gif/ns_logo.gif";
+import noframes from "../images/gif/noframes.gif";
+import notepad from "../images/gif/notepad.gif";
+import yahooweek from "../images/gif/yahooweek.gif";
+import community from "../images/gif/community.gif";
+import wabwalk from "../images/gif/wabwalk.gif";
+import webtrips from "../images/gif/webtrips.gif";
+import hot from "../images/gif/hot.gif";
+import newgif from "../images/gif/new.gif";
+import mchammer from "../images/gif/mchammer.gif";
+import spinningearth from "../images/gif/spinningearth.gif";
+import emailme from "../images/gif/emailme.gif";
+import construction from "../images/gif/construction.gif";
+import new2 from "../images/gif/new2.gif";
+import geocities from "../images/gif/geocities.jpg";
+import hacker from "../images/gif/hacker.gif";
+import wyld_stallyns from "../images/wyld_stallyns.gif";
+import counter2 from "../images/gif/counter2.gif";
+import drudgesiren from "../images/gif/drudgesiren.gif";
+
+const imageList = [
+  upspot, ie_logo, ns_logo, noframes, notepad, yahooweek,
+  community, wabwalk, webtrips, hot, newgif, mchammer,
+  spinningearth, emailme, construction, new2, geocities,
+  hacker, wyld_stallyns, counter2, drudgesiren
+];
+
+const getRandomImage = () => {
+  const randomIndex = Math.floor(Math.random() * imageList.length);
+  return imageList[randomIndex];
+};
+
+const MusicSharingPlatform = () => (
   <Layout>
-    <section className="py-5 text-center container">
-      <div className="row py-lg-5">
-        <div className="col-lg-6 col-md-8 mx-auto">
-        <div className="well">
-                <h1 className="display-3">
-                      <text style={{color: '#FF0000'}}>B</text>
-                      <text style={{color: '#FF5A00'}}>a</text>
-                      <text style={{color: '#FFB400'}}>n</text>
-                      <text style={{color: '#FFff00'}}>d</text>
-                      <text style={{color: '#A5ff00'}}>f</text>
-                      <text style={{color: '#4Bff00'}}>e</text>
-                      <text style={{color: '#00ff00'}}>s</text>
-                      <text style={{color: '#00ff5A0'}}>t</text>
-                      <blink>
-                      <text style={{color: '#00ffB4'}}>.</text>
-                      <text style={{color: '#00ffff'}}>o</text>
-                      <text style={{color: '#00B4ff'}}>r</text>
-                      <text style={{color: '#005Aff'}}>g</text>
-                    </blink>
-                    </h1>
-                    <img src={wyld_stallyns} className="img-fluid" alt="wyld_stallyns.gif" />
-          <p className="lead text-muted"> ...and we're Wyld Stallyns!</p>
-          </div>
-                          <center>
-            <img src={yahooweek} alt="yahooweek.gif" />
-            <img src={community} alt="community.gif" />
-            <img src={wabwalk} alt="wabwalk.gif" />
-            <img src={webtrips} alt="webtrips.gif" />
-            </center>
-          <StaticImage
-            src="../images/photo1.png"
-            width={300}
-            quality={95}
-            formats={["AUTO", "WEBP"]}
-            alt="A Gatsby astronaut"
-            className="img-fluid"
-          />
-                 <StaticImage
-            src="../images/photo2.png"
-            width={300}
-            quality={95}
-            formats={["AUTO", "WEBP"]}
-            alt="A Gatsby astronaut"
-            className="img-fluid"
-          />
-                 <StaticImage
-            src="../images/photo3.png"
-            width={300}
-            quality={95}
-            formats={["AUTO", "WEBP"]}
-            alt="A Gatsby astronaut"
-            className="img-fluid"
-          />
-                    <StaticImage
-            src="../images/photo4.png"
-            width={300}
-            quality={95}
-            formats={["AUTO", "WEBP"]}
-            alt="A Gatsby astronaut"
-            className="img-fluid"
-          />
+    <Seo title="Music Sharing Platform - Bandfest.org" />
 
-        </div>
-        <br />
-      <br />
-      <center>
-        {/* <!-- TRIPLE MC HAMMER -->  */}
-        <img src={mchammer} alt="mchammer.gif" />&nbsp;&nbsp; 
-        <img src={mchammer} alt="mchammer.gif" />&nbsp;&nbsp; 
-        <img src={mchammer} alt="mchammer.gif" />
-      </center>
+    {/* Header */}
+    <header className="bg-primary text-white py-5">
+      <div className="container">
+        <h1>Discover New Music</h1>
+        <p>Upcoming Music Groups Share Sound Snippets Here!</p>
+        <Link to="/about" className="btn btn-light btn-lg">
+          About Us
+        </Link>
+        <img src={getRandomImage()} alt="Random Image" />
       </div>
-      <div className="row">
-        <Link to="/about/" className="btn btn-primary btn-lg">About</Link>
-        <Link to="/page-2/" className="btn btn-secondary my-2">Go to page 2</Link>
+    </header>
+
+    {/* Featured Sound Snippet */}
+    <section className="py-5">
+      <div className="container">
+        <h2>Featured Sound Snippet</h2>
+        {/* Replace the iframe with the SoundCloud embed code */}
+        <iframe
+          width="100%"
+          height="166"
+          scrolling="no"
+          frameBorder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/12345&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+        <p>
+          Check out the latest music from upcoming artists. Want your music
+          featured here? <Link to="/contact">Contact Us</Link>.
+        </p>
+        <img src={getRandomImage()} alt="Random Image" />
       </div>
-      <footer class="footer">
-        <p class="pull-left" style={{marginTop: '-14px'}}>
-        <img src={geocities} alt="geocities.jpg" />
-        </p>
-        <p class="pull-right" style={{marginTop: '-14px'}}>
-        <img src={hacker} alt="hacker.gif" />&nbsp; Built with <a href="http://bootswatch.com">Bootswatch</a>
-        </p>
-      </footer>
     </section>
+
+    {/* Explore Music */}
+    <section className="bg-light py-5">
+      <div className="container">
+        <h2>Explore New Music</h2>
+        <p>
+          Browse through a diverse collection of sound snippets and discover
+          emerging talent.
+        </p>
+        <Link to="/explore" className="btn btn-primary btn-lg">
+          Explore Music
+        </Link>
+        <img src={getRandomImage()} alt="Random Image" />
+      </div>
+    </section>
+
+    {/* Share Your Music */}
+    <section className="py-5">
+      <div className="container">
+        <h2>Share Your Music</h2>
+        <p>
+          Are you an upcoming music group? Share your sound snippets with the
+          world!
+        </p>
+        <Link to="/upload" className="btn btn-success btn-lg">
+          Upload Music
+        </Link>
+        <img src={getRandomImage()} alt="Random Image" />
+      </div>
+    </section>
+
+    {/* Contact Section */}
+    <section className="bg-dark py-5 text-white">
+      <div className="container">
+        <h2>Contact Us</h2>
+        <p>
+          Have questions or need assistance? Feel free to reach out to us.
+        </p>
+        <Link to="/contact" className="btn btn-warning btn-lg">
+          Contact Us
+        </Link>
+        <img src={getRandomImage()} alt="Random Image" />
+      </div>
+    </section>
+
+    {/* Footer */}
+    <footer className="bg-secondary text-white py-3">
+      <div className="container">
+        <p>&copy; {new Date().getFullYear()} Bandfest.org. All rights reserved.</p>
+      </div>
+    </footer>
   </Layout>
-)
+);
 
-export default IndexPage
-
-export const Head = () => (
-    <Seo />
-)
+export default MusicSharingPlatform;
