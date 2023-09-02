@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -40,194 +40,84 @@ const getRandomImage = () => {
   return imageList[randomIndex];
 };
 
-// ... (Previous code)
-
 const MusicSharingPlatform = () => (
   <Layout>
     <Seo title="Music Sharing Platform - Bandfest.org" />
 
-    {/* Header */}
-    <header
-      className="bg-primary text-white py-5"
-      style={{
-        backgroundImage: `url(${geocities})`,
-        backgroundRepeat: 'repeat',
-        backgroundPosition: 'center',
-        fontFamily: 'Comic Sans MS, cursive',
-        textAlign: 'center',
-        fontSize: '36px',
-      }}
-    >
-      <div className="container">
+    <header className="bg-dark text-light py-5">
+      <div className="container text-center">
         <h1>Welcome to Bandfest.org</h1>
-        <p>Upcoming Music Groups Share Sound Snippets Here!</p>
-        <Link
-          to="/about"
-          className="btn btn-light btn-lg"
-          style={{
-            backgroundColor: '#FF6600',
-            padding: '10px 20px',
-            borderRadius: '8px',
-            fontSize: '24px',
-            textDecoration: 'none',
-            color: 'white',
-          }}
-        >
+        <p className="lead">Upcoming Music Groups Share Sound Snippets Here!</p>
+        <Link to="/about" className="btn btn-warning btn-lg">
           About Us
         </Link>
       </div>
     </header>
 
-    {/* Featured Sound Snippet */}
-    <section
-      className="py-5"
-      style={{
-        backgroundColor: 'black',
-        color: 'white',
-        fontFamily: 'Arial, sans-serif',
-        padding: '20px',
-      }}
-    >
+    <section className="py-5">
       <div className="container">
         <h2>Featured Sound Snippet</h2>
         {/* Replace the iframe with the SoundCloud embed code */}
-        <iframe
-          width="100%"
-          height="166"
-          scrolling="no"
-          frameBorder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/12345&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
+        <div className="embed-responsive embed-responsive-16by9">
+          <iframe
+            className="embed-responsive-item"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/12345&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            frameBorder="0"
+            scrolling="no"
+            allow="autoplay"
+          ></iframe>
+        </div>
         <p>
           Check out the latest music from upcoming artists. Want your music
           featured here? <Link to="/contact">Contact Us</Link>.
         </p>
-        <img src={emailme} alt="Email Me" style={{ maxWidth: '100%' }} />
       </div>
     </section>
 
-    {/* Explore Music */}
-    <section
-      className="bg-light py-5"
-      style={{
-        backgroundImage: `url(${spinningearth})`,
-        backgroundRepeat: 'repeat',
-        backgroundPosition: 'center',
-        fontFamily: 'Comic Sans MS, cursive',
-        fontSize: '24px',
-        padding: '20px',
-      }}
-    >
+    <section className="bg-light py-5">
       <div className="container">
         <h2>Explore New Music</h2>
         <p>
           Browse through a diverse collection of sound snippets and discover
           emerging talent.
         </p>
-        <Link
-          to="/explore"
-          className="btn btn-primary btn-lg"
-          style={{
-            backgroundColor: '#FF6600',
-            padding: '10px 20px',
-            borderRadius: '8px',
-            fontSize: '24px',
-            textDecoration: 'none',
-            color: 'white',
-          }}
-        >
+        <Link to="/explore" className="btn btn-primary btn-lg">
           Explore Music
         </Link>
       </div>
     </section>
 
-    {/* Share Your Music */}
-    <section
-      className="py-5"
-      style={{
-        backgroundColor: '#FFFFCC',
-        color: 'black',
-        fontFamily: 'Arial, sans-serif',
-        padding: '20px',
-      }}
-    >
+    <section className="py-5">
       <div className="container">
         <h2>Share Your Music</h2>
         <p>
           Are you an upcoming music group? Share your sound snippets with the
           world!
         </p>
-        <Link
-          to="/upload"
-          className="btn btn-success btn-lg"
-          style={{
-            backgroundColor: '#FF6600',
-            padding: '10px 20px',
-            borderRadius: '8px',
-            fontSize: '24px',
-            textDecoration: 'none',
-            color: 'white',
-          }}
-        >
+        <Link to="/upload" className="btn btn-success btn-lg">
           Upload Music
         </Link>
-        <img src={community} alt="Community" style={{ maxWidth: '100%' }} />
       </div>
     </section>
 
-    {/* Contact Section */}
-    <section
-      className="bg-dark py-5 text-white"
-      style={{
-        backgroundColor: 'black',
-        fontFamily: 'Comic Sans MS, cursive',
-        fontSize: '24px',
-        padding: '20px',
-      }}
-    >
+    <section className="bg-dark text-light py-5">
       <div className="container">
         <h2>Contact Us</h2>
         <p>
           Have questions or need assistance? Feel free to reach out to us.
         </p>
-        <Link
-          to="/contact"
-          className="btn btn-warning btn-lg"
-          style={{
-            backgroundColor: '#FF6600',
-            padding: '10px 20px',
-            borderRadius: '8px',
-            fontSize: '24px',
-            textDecoration: 'none',
-            color: 'white',
-          }}
-        >
+        <Link to="/contact" className="btn btn-warning btn-lg">
           Contact Us
         </Link>
-        <img src={construction} alt="Under Construction" style={{ maxWidth: '100%' }} />
       </div>
     </section>
 
-    {/* Footer */}
-    <footer
-      className="bg-secondary text-white py-3"
-      style={{
-        backgroundColor: 'black',
-        fontFamily: 'Arial, sans-serif',
-        fontSize: '18px',
-        padding: '20px',
-        textAlign: 'center',
-      }}
-    >
+    <footer className="bg-secondary text-light py-3">
       <div className="container">
         <p>&copy; {new Date().getFullYear()} Bandfest.org. All rights reserved.</p>
-        <img src={new2} alt="New" style={{ maxWidth: '100%' }} />
       </div>
     </footer>
   </Layout>
 );
 
 export default MusicSharingPlatform;
-
-
