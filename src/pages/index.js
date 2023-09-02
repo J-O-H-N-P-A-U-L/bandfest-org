@@ -50,10 +50,9 @@ const MusicSharingPlatform = () => (
     <header
       className="bg-primary text-white py-5"
       style={{
-        backgroundImage: `url(${getRandomImage()})`,
+        backgroundImage: `url(${geocities})`,
         backgroundRepeat: 'repeat',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
         fontFamily: 'Comic Sans MS, cursive',
         textAlign: 'center',
         fontSize: '36px',
@@ -104,7 +103,7 @@ const MusicSharingPlatform = () => (
           Check out the latest music from upcoming artists. Want your music
           featured here? <Link to="/contact">Contact Us</Link>.
         </p>
-        <img src={getRandomImage()} alt="Random Image" />
+        <img src={emailme} alt="Email Me" style={{ maxWidth: '100%' }} />
       </div>
     </section>
 
@@ -112,7 +111,7 @@ const MusicSharingPlatform = () => (
     <section
       className="bg-light py-5"
       style={{
-        backgroundImage: `url(${getRandomImage()})`,
+        backgroundImage: `url(${spinningearth})`,
         backgroundRepeat: 'repeat',
         backgroundPosition: 'center',
         fontFamily: 'Comic Sans MS, cursive',
@@ -140,7 +139,6 @@ const MusicSharingPlatform = () => (
         >
           Explore Music
         </Link>
-        <img src={getRandomImage()} alt="Random Image" />
       </div>
     </section>
 
@@ -174,7 +172,7 @@ const MusicSharingPlatform = () => (
         >
           Upload Music
         </Link>
-        <img src={getRandomImage()} alt="Random Image" />
+        <img src={community} alt="Community" style={{ maxWidth: '100%' }} />
       </div>
     </section>
 
@@ -207,7 +205,7 @@ const MusicSharingPlatform = () => (
         >
           Contact Us
         </Link>
-        <img src={getRandomImage()} alt="Random Image" />
+        <img src={construction} alt="Under Construction" style={{ maxWidth: '100%' }} />
       </div>
     </section>
 
@@ -224,11 +222,12 @@ const MusicSharingPlatform = () => (
     >
       <div className="container">
         <p>&copy; {new Date().getFullYear()} Bandfest.org. All rights reserved.</p>
-        <img src={getRandomImage()} alt="Random Image" />
+        <img src={new2} alt="New" style={{ maxWidth: '100%' }} />
       </div>
     </footer>
   </Layout>
 );
 
 export default MusicSharingPlatform;
+
 
