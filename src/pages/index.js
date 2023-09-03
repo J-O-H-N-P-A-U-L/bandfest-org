@@ -22,6 +22,9 @@ import geocities from "../images/gif/geocities.jpg";
 import hacker from "../images/gif/hacker.gif";
 import counter2 from "../images/gif/counter2.gif";
 import drudgesiren from "../images/gif/drudgesiren.gif";
+import artist1 from "../images/artist1.png";
+import artist2 from "../images/artist2.png";
+import artist3 from "../images/artist3.png";
 
 import Layout from "../components/layout";
 import { Seo } from "../components/seo";
@@ -140,30 +143,30 @@ const IndexPage = () => (
           {/* Featured Artist Cards */}
           <div className="col-md-4">
             <div className="card">
-              <img src="/artist1.jpg" className="card-img-top" alt="Artist 1" />
+              <img src={artist1} className="card-img-top" alt="Artist 1" />
               <div className="card-body">
-                <h5 className="card-title">Artist Name 1</h5>
-                <p className="card-text">Description of the featured artist. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h5 className="card-title">Michael Flatliner</h5>
+                <p className="card-text">Michael Flatliner, a remarkable rock artist, dazzles with masterful guitar skills, poetic lyrics, and electrifying performances, forging a deep connection with fans worldwide through his authentic charisma and music.</p>
                 <a href="#" className="btn btn-primary">Explore</a>
               </div>
             </div>
           </div>
           <div className="col-md-4">
             <div className="card">
-              <img src="/artist2.jpg" className="card-img-top" alt="Artist 2" />
+              <img src={artist2} className="card-img-top" alt="Artist 2" />
               <div className="card-body">
-                <h5 className="card-title">Artist Name 2</h5>
-                <p className="card-text">Description of the featured artist. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h5 className="card-title">Jane Smith</h5>
+                <p className="card-text">Jane Smith: Iconic rock music sensation with a powerhouse voice that shook stages worldwide. A living legend known for timeless hits and electrifying performances. Rock 'n' roll royalty.</p>
                 <a href="#" className="btn btn-primary">Explore</a>
               </div>
             </div>
           </div>
           <div className="col-md-4">
             <div className="card">
-              <img src="/artist3.jpg" className="card-img-top" alt="Artist 3" />
+              <img src={artist3}  className="card-img-top" alt="Artist 3" />
               <div className="card-body">
-                <h5 className="card-title">Artist Name 3</h5>
-                <p className="card-text">Description of the featured artist. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h5 className="card-title">Bit Dusty</h5>
+                <p className="card-text">Bit Dusty, a jazz pianist extraordinaire, mesmerizes with soulful melodies and improvisational genius. With a unique blend of tradition and innovation, Bit captivates audiences, creating memorable musical journeys.</p>
                 <a href="#" className="btn btn-primary">Explore</a>
               </div>
             </div>
@@ -180,7 +183,7 @@ const IndexPage = () => (
             <div className="card">
               <div className="card-body">
                 <p className="card-text">"Bandfest.org has helped me discover amazing local talent. I love the variety of music available here."</p>
-                <p className="card-title">John Doe</p>
+                <p className="card-title">Michael Flatliner</p>
                 <p className="card-subtitle mb-2 text-muted">Music Enthusiast</p>
               </div>
             </div>
