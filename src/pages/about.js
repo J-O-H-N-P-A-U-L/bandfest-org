@@ -1,31 +1,29 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import Layout from "../components/layout";
 
-import Layout from "../components/layout"
-import {Seo} from "../components/seo"
+const About = () => {
+  return (
+    <Layout>
+      {/* You can place your header or navigation here */}
+      
+      <section className="about-section">
+        <div className="container">
+          <h1>About Us</h1>
+          <p>
+            Welcome to Bandfest.org, your ultimate destination for discovering and supporting local musicians and artists. Our mission is to bring together music enthusiasts and talented artists, creating a thriving community of music lovers.
+          </p>
+          <p>
+            At Bandfest.org, we believe that local talent deserves recognition. We provide a platform for emerging artists to showcase their music, connect with fans, and reach a wider audience. Our commitment to supporting local musicians is at the core of everything we do.
+          </p>
+          <p>
+            Whether you're a music enthusiast looking for new sounds or a local artist looking to share your music with the world, Bandfest.org is here for you. Join us in celebrating the diversity and creativity of the local music scene.
+          </p>
+        </div>
+      </section>
 
-const AboutPage = () => (
-  <Layout>
-    <div className="container  my-5">
+      {/* You can include other sections or components below */}
+    </Layout>
+  );
+};
 
-      <div className="container">
-        <h1 >What you need to know</h1>
-        <p>
-          <ul>
-            <li>Bootstrap 5 support with SASS</li>
-            <li>Customize theme via <span className="font-monospace ">layout.scss</span></li>
-            <li>If any issue report to <a href="https://github.com/r-ichard/gatsby-starter-bootstrap-5" target="_blank" rel="noopener noreferrer">Github Repo</a></li>
-          </ul>
-        </p>
-        <p>Created by <a href="https://github.com/J-O-H-N-P-A-U-L" target="_blank" rel="noopener noreferrer">JOHN PAUL</a></p>
-      </div>
-      <Link to="/">Go back to the homepage</Link>
-    </div>
-  </Layout>
-)
-
-export default AboutPage
-
-export const Head = () => (
-    <Seo title="About Gatsby Bootsrap 5 starter" />
-)
+export default About;

@@ -2,10 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
-import Layout from "../components/layout";
-import { Seo } from "../components/seo";
-
-// Import images
 import upspot from "../images/gif/7upspot.gif";
 import ie_logo from "../images/gif/ie_logo.gif";
 import ns_logo from "../images/gif/ns_logo.gif";
@@ -24,100 +20,197 @@ import construction from "../images/gif/construction.gif";
 import new2 from "../images/gif/new2.gif";
 import geocities from "../images/gif/geocities.jpg";
 import hacker from "../images/gif/hacker.gif";
-import wyld_stallyns from "../images/wyld_stallyns.gif";
 import counter2 from "../images/gif/counter2.gif";
 import drudgesiren from "../images/gif/drudgesiren.gif";
 
-const imageList = [
-  upspot, ie_logo, ns_logo, noframes, notepad, yahooweek,
-  community, wabwalk, webtrips, hot, newgif, mchammer,
-  spinningearth, emailme, construction, new2, geocities,
-  hacker, wyld_stallyns, counter2, drudgesiren
-];
+import Layout from "../components/layout";
+import { Seo } from "../components/seo";
+import SoundCloudIntegration from "../components/soundCloudIntegration";
 
-const getRandomImage = () => {
-  const randomIndex = Math.floor(Math.random() * imageList.length);
-  return imageList[randomIndex];
-};
-
-const MusicSharingPlatform = () => (
+const IndexPage = () => (
   <Layout>
-    <Seo title="Music Sharing Platform - Bandfest.org" />
-
-    <header className="bg-dark text-light py-5">
-      <div className="container text-center">
-        <h1>Welcome to Bandfest.org</h1>
-        <p className="lead">Upcoming Music Groups Share Sound Snippets Here!</p>
-        <Link to="/about" className="btn btn-warning btn-lg">
-          About Us
-        </Link>
-      </div>
-    </header>
-
-    <section className="py-5">
-      <div className="container">
-        <h2>Featured Sound Snippet</h2>
-        {/* Replace the iframe with the SoundCloud embed code */}
-        <div className="embed-responsive embed-responsive-16by9">
-          <iframe
-            className="embed-responsive-item"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/12345&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            frameBorder="0"
-            scrolling="no"
-            allow="autoplay"
-          ></iframe>
+    <section className="py-5 text-center container">
+      <div className="bs-component">
+        <div className="jumbotron">
+          <h1 className="display-3">
+            <img src={upspot} alt="7upspot.gif" />&nbsp; 
+            <span style={{ color: '#FF0000' }}>B</span>
+            <span style={{ color: '#FF5A00' }}>a</span>
+            <span style={{ color: '#FFB400' }}>n</span>
+            <span style={{ color: '#FFff00' }}>d</span>
+            <span style={{ color: '#A5ff00' }}>f</span>
+            <span style={{ color: '#4Bff00' }}>e</span>
+            <span style={{ color: '#00ff00' }}>s</span>
+            <span style={{ color: '#00ff5A0' }}>t</span>
+            <blink>
+              <span style={{ color: '#00ffB4' }}>.</span>
+              <span style={{ color: '#00ffff' }}>o</span>
+              <span style={{ color: '#00B4ff' }}>r</span>
+              <span style={{ color: '#005Aff' }}>g</span>
+            </blink>
+          </h1>
+          <p className="lead">Harmonize Your Passion, Unite the Sound at Bandfest.org.</p>
+          <center>
+            <table cellPadding="2" cellSpacing="2">
+              <tr>
+                <td>
+                  <img src={ie_logo} alt="ie_logo.gif" />
+                </td>
+                <td>
+                  <img src={ns_logo} alt="ns_logo.gif" />
+                </td>
+                <td>
+                  <img src={noframes} alt="noframes.gif" />
+                </td>
+                <td>
+                  <img src={notepad} alt="notepad.gif" />
+                </td>
+              </tr>
+            </table>
+          </center>
+          <hr className="my-4" />
+          <p>
+            <center>
+              <img src={yahooweek} alt="yahooweek.gif" />
+              <img src={community} alt="community.gif" />
+              <img src={wabwalk} alt="wabwalk.gif" />
+              <img src={webtrips} alt="webtrips.gif" />
+            </center>
+          </p>
+          <p className="lead">
+            <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </p>
+          <div className="span4">
+            <h3>Postal addresses</h3>
+            <address>
+              <img src={spinningearth} alt="spinningearth.gif" />&nbsp; <strong>Platos, Inc.</strong>
+              <br /> 14 3/5ths Station St, Frankston VIC 3199 <br /> Frankston, Vic 3199 <br />
+              <abbr title="Phone">P:</abbr> 0408 341 924.
+            </address>
+            <address>
+              <strong>MEDIA QUERIES</strong>
+              <br />
+              <a href="mailto:#" />
+              <img src={emailme} alt="emailme.gif" />
+            </address>
+          </div>
         </div>
-        <p>
-          Check out the latest music from upcoming artists. Want your music
-          featured here? <Link to="/contact">Contact Us</Link>.
-        </p>
+        <br />
+        <br />
+        <center>
+          {/* <!-- TRIPLE MC HAMMER -->  */}
+          <img src={mchammer} alt="mchammer.gif" />&nbsp;&nbsp; 
+          <img src={mchammer} alt="mchammer.gif" />&nbsp;&nbsp; 
+          <img src={mchammer} alt="mchammer.gif" />
+        </center>
       </div>
     </section>
-
-    <section className="bg-light py-5">
+    <section className="hero-section text-center">
       <div className="container">
-        <h2>Explore New Music</h2>
-        <p>
-          Browse through a diverse collection of sound snippets and discover
-          emerging talent.
-        </p>
-        <Link to="/explore" className="btn btn-primary btn-lg">
-          Explore Music
-        </Link>
+        <h1 className="display-4">Discover Local Talent</h1>
+        <p className="lead">Bandfest.org - Your one-stop destination to explore and support local musicians.</p>
+        <Link to="/upload" className="btn btn-primary btn-lg">Get Started</Link>
       </div>
     </section>
-
-    <section className="py-5">
+    <section className="soundcloud-section">
       <div className="container">
-        <h2>Share Your Music</h2>
-        <p>
-          Are you an upcoming music group? Share your sound snippets with the
-          world!
-        </p>
-        <Link to="/upload" className="btn btn-success btn-lg">
-          Upload Music
-        </Link>
+        <div className="row">
+          <div className="col-md-6">
+            <h2>Listen to the Latest Tracks</h2>
+            <p>Explore a wide variety of music from local artists. Stream and discover new sounds.</p>
+            <a href="#" className="btn btn-secondary">Browse SoundCloud</a>
+          </div>
+          <div className="col-md-6">
+            <SoundCloudIntegration />
+          </div>
+        </div>
       </div>
     </section>
-
-    <section className="bg-dark text-light py-5">
+    <section className="upload-section text-center">
       <div className="container">
-        <h2>Contact Us</h2>
-        <p>
-          Have questions or need assistance? Feel free to reach out to us.
-        </p>
-        <Link to="/contact" className="btn btn-warning btn-lg">
-          Contact Us
-        </Link>
+        <h2>Share Your Music with the World</h2>
+        <p>Are you a local musician? Upload your tracks and reach a wider audience.</p>
+        <Link to="/upload" className="btn btn-primary btn-lg">Upload Your Music</Link>
       </div>
     </section>
-
-    <footer className="bg-secondary text-light py-3">
+    <section className="featured-artists-section">
       <div className="container">
-        <p>&copy; {new Date().getFullYear()} Bandfest.org. All rights reserved.</p>
+        <h2>Featured Local Artists</h2>
+        <div className="row">
+          {/* Featured Artist Cards */}
+          <div className="col-md-4">
+            <div className="card">
+              <img src="/artist1.jpg" className="card-img-top" alt="Artist 1" />
+              <div className="card-body">
+                <h5 className="card-title">Artist Name 1</h5>
+                <p className="card-text">Description of the featured artist. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" className="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card">
+              <img src="/artist2.jpg" className="card-img-top" alt="Artist 2" />
+              <div className="card-body">
+                <h5 className="card-title">Artist Name 2</h5>
+                <p className="card-text">Description of the featured artist. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" className="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card">
+              <img src="/artist3.jpg" className="card-img-top" alt="Artist 3" />
+              <div className="card-body">
+                <h5 className="card-title">Artist Name 3</h5>
+                <p className="card-text">Description of the featured artist. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" className="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
+    <section className="testimonials-section">
+      <div className="container">
+        <h2>What Our Users Say</h2>
+        <div className="row">
+          {/* Testimonial Cards */}
+          <div className="col-md-4">
+            <div className="card">
+              <div className="card-body">
+                <p className="card-text">"Bandfest.org has helped me discover amazing local talent. I love the variety of music available here."</p>
+                <p className="card-title">John Doe</p>
+                <p className="card-subtitle mb-2 text-muted">Music Enthusiast</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card">
+              <div className="card-body">
+                <p className="card-text">"As a musician, Bandfest.org has provided me with a platform to share my music and connect with fans."</p>
+                <p className="card-title">Jane Smith</p>
+                <p className="card-subtitle mb-2 text-muted">Local Artist</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card">
+              <div className="card-body">
+                <p className="card-text">"I've found so many hidden gems on Bandfest.org. It's a fantastic resource for discovering local music."</p>
+                <p className="card-title">Emily Johnson</p>
+                <p className="card-subtitle mb-2 text-muted">Music Enthusiast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </Layout>
 );
 
-export default MusicSharingPlatform;
+export default IndexPage;
+
+export const Head = () => (
+  <Seo />
+);
